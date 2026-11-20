@@ -3,8 +3,7 @@
 A near-black Obsidian theme with a hot-pink accent — a port of the **T3 Code**
 palette (the `t3-code` bb theme) to Obsidian.
 
-Add a 16:9 screenshot (512×288 recommended) at `screenshots/screenshot.png`
-before submitting to the community directory.
+![Pinkindle theme showcase](screenshots/screenshot.png)
 
 ## Design
 

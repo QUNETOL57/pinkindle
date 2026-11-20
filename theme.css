@@ -217,12 +217,12 @@ body {
 	--checkbox-border-color: #242424;
 	--checkbox-border-color-hover: var(--color-accent);
 	--checkbox-marker-color: #1a0b12;
-	--graph-line: #242424;
-	--graph-node: #d4d4d4;
+	--graph-line: color-mix(in srgb, var(--color-accent) 22%, #242424);
+	--graph-node: var(--color-accent);
 	--graph-node-focused: var(--color-accent);
 	--graph-node-tag: var(--color-accent-1);
 	--graph-node-attachment: #23d18b;
-	--graph-node-unresolved: #8f8f8f;
+	--graph-node-unresolved: color-mix(in srgb, var(--color-accent) 80%, #000);
 	--graph-text: #d4d4d4;
 	--canvas-background: #000;
 	--canvas-color: #8f8f8f;
@@ -399,12 +399,12 @@ body {
 	--checkbox-border-color: #d4d4d8;
 	--checkbox-border-color-hover: var(--text-accent);
 	--checkbox-marker-color: #1a0b12;
-	--graph-line: #dcdce0;
-	--graph-node: #52525b;
+	--graph-line: color-mix(in srgb, var(--color-accent) 14%, #dcdce0);
+	--graph-node: var(--text-accent);
 	--graph-node-focused: var(--text-accent);
 	--graph-node-tag: var(--text-accent);
 	--graph-node-attachment: #0dbe4e;
-	--graph-node-unresolved: #9a9a9f;
+	--graph-node-unresolved: color-mix(in srgb, var(--text-accent) 80%, #000);
 	--graph-text: #27272a;
 	--canvas-background: #fcfcfc;
 	--canvas-color: #71717b;
@@ -461,12 +461,9 @@ body {
 	border-radius: var(--radius-s);
 }
 
-/* stylelint-disable selector-class-pattern -- CodeMirror's class names are camelCase. */
-.markdown-source-view.mod-cm6 .HyperMD-codeblock,
-.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
-	border-radius: var(--radius-s);
+.markdown-source-view.mod-cm6 .code-block-flair {
+	color: var(--text-accent);
 }
-/* stylelint-enable selector-class-pattern */
 
 .theme-dark .markdown-rendered pre {
 	border: 1px solid #242424;
@@ -506,4 +503,17 @@ body {
 
 .menu-separator {
 	margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+}
+
+/* Make the destructive confirmation action clearly visible in dark dialogs. */
+.modal button.mod-destructive {
+	background-color: #ff204b;
+	color: #fff;
+
+	--text-color: #fff;
+}
+
+.modal button.mod-destructive.mobile-tap,
+.modal button.mod-destructive:hover {
+	background-color: color-mix(in srgb, #ff204b 85%, #000);
 }
