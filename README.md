@@ -3,8 +3,7 @@
 A near-black Obsidian theme with a hot-pink accent, crisp typography, and
 subtle surfaces for focused writing and code.
 
-Add a 16:9 screenshot (512×288 recommended) at `screenshots/screenshot.png`
-before submitting to the community directory.
+![Pinkindle theme showcase](screenshots/screenshot.png)
 
 ## Design
 
